@@ -1,0 +1,44 @@
+body{
+    background-color: pink;
+}
+
+#clock-container{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 300px;
+    background: url(clock.jpg) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minuts, #second{    /*ye 3 container ek sath isliye liye qki 3no k ek he effect dena tha*/
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 5px;    /* sui k liye kitne width lagegi */
+    height: 21%;    /*sui kitne height legi*/
+    top: 29.4%;        /*top se kitne jagh chodegi*/
+    left: 49.4%;       /*kitna % left me jaygi*/
+    opacity: 0.8;      /* watch me apn ne 3 sui li h to vo ek dusre me overlap na ho isliye opacity use kiya h*/
+}
+#minuts{
+    width: 4px;
+    height: 26%;
+    top: 24.4%;
+    left: 49.5%;
+    opacity: 0.8;  
+
+}
+#second{
+    width: 3px;
+    height: 30%;
+    top: 20.4%;
+    left: 49.6%;
+    opacity: 0.8; 
+
+}
